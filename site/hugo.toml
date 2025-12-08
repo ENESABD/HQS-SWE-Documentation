@@ -1,126 +1,59 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'High-Quality Software Documentation'
-theme = 'ananke'
+title = 'How to Build High-Quality Software'
+theme = 'hextra'
 
-[params]
-  text_color = "dark-gray"
-  author = "HQS"
-  description = "Learn how to build high-quality software"
-  
-[params.ananke_socials]
+enableRobotsTXT = true
+enableGitInfo = true
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.highlight]
+    noClasses = false
+
+[params]
+  description = "Software Engineering as Problem Solving - A guide to building quality software"
+  
+  [params.navbar]
+    displayTitle = true
+    displayLogo = false
+  
+  [params.footer]
+    displayCopyright = false
+    displayPoweredBy = true
+
+  [params.editURL]
+    enable = false
 
 [menu]
   [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-  
-  [[menu.main]]
     name = "Philosophy"
-    url = "/philosophy/"
-    weight = 2
-  
-  [[menu.main]]
-    name = "Rules"
-    url = "/rules/"
-    weight = 3
-  
-  [[menu.main]]
-    name = "Design Principles"
-    parent = "Rules"
-    url = "/rules/design-principles/"
+    pageRef = "/philosophy"
     weight = 1
-  
-  [[menu.main]]
-    name = "Architectural Patterns"
-    parent = "Rules"
-    url = "/rules/architectural-patterns/"
-    weight = 2
-  
-  [[menu.main]]
-    name = "Code Organization"
-    parent = "Rules"
-    url = "/rules/code-organization/"
-    weight = 3
-  
-  [[menu.main]]
-    name = "Best Practices"
-    parent = "Rules"
-    url = "/rules/best-practices/"
-    weight = 4
-  
-  [[menu.main]]
-    name = "Tools"
-    url = "/tools/"
-    weight = 4
-  
-  [[menu.main]]
-    name = "Design"
-    parent = "Tools"
-    url = "/tools/design/"
-    weight = 1
-  
-  [[menu.main]]
-    name = "Languages & Frameworks"
-    parent = "Tools"
-    url = "/tools/languages-frameworks/"
-    weight = 2
-  
-  [[menu.main]]
-    name = "Testing"
-    parent = "Tools"
-    url = "/tools/testing/"
-    weight = 3
-  
-  [[menu.main]]
-    name = "Process"
-    parent = "Tools"
-    url = "/tools/process/"
-    weight = 4
-  
-  [[menu.main]]
-    name = "Dev Environments"
-    parent = "Tools"
-    url = "/tools/dev-environments/"
-    weight = 5
-  
-  [[menu.main]]
-    name = "Teams"
-    url = "/teams/"
-    weight = 5
   
   [[menu.main]]
     name = "Collaboration"
-    parent = "Teams"
-    url = "/teams/collaboration/"
-    weight = 1
-  
-  [[menu.main]]
-    name = "Communication"
-    parent = "Teams"
-    url = "/teams/communication/"
+    pageRef = "/collaboration"
     weight = 2
   
   [[menu.main]]
-    name = "Team Dynamics"
-    parent = "Teams"
-    url = "/teams/team-dynamics/"
+    name = "Practices"
+    pageRef = "/practices"
     weight = 3
   
   [[menu.main]]
-    name = "Culture"
-    parent = "Teams"
-    url = "/teams/culture/"
+    name = "Design"
+    pageRef = "/design"
     weight = 4
   
   [[menu.main]]
-    name = "Leadership"
-    parent = "Teams"
-    url = "/teams/leadership/"
+    name = "Technologies"
+    pageRef = "/technologies"
     weight = 5
+  
+  [[menu.main]]
+    name = "Example"
+    pageRef = "/example"
+    weight = 6

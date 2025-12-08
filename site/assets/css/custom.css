@@ -1,0 +1,15 @@
+/* Custom styles for Hextra theme */
+
+/* Increase navbar font size */
+nav a,
+nav button,
+.hextra-nav-menu-toggle,
+.hextra-nav-menu-item a {
+  font-size: 1rem !important;
+}
+
+/* Navbar link text */
+nav a span,
+nav button span {
+  font-size: 1.1rem !important;
+}
