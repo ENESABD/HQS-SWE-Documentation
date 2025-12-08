@@ -661,4 +661,4 @@ _Questions?_
 - **Robert C. Martin** — _Clean Architecture_
 - **Dan McKinley** — "Choose Boring Technology"
 
-Full documentation: [enesabd.github.io/HQS-SWE-Documentation](https://enesabd.github.io/HQS-SWE-Documentation)
+Full documentation: [hqs-swe-documentation.netlify.app/](https://hqs-swe-documentation.netlify.app/)
